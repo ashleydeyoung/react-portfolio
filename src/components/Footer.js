@@ -22,7 +22,7 @@ function Footer() {
               </a>{" "}
               &nbsp;
               <a
-                href="https://www.linkedin.com/in/ashleydyches"
+                href="https://www.linkedin.com/in/ashleydeyoung"
                 className="text-right text-white"
               >
                 <i className="fab fa-linkedin"></i>
