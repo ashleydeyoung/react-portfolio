@@ -47,9 +47,31 @@ body {
 
 .see {
   background-color: #fce7e7;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
-.round {
+/* .round {
   border-radius: 25px;
+} */
+
+.drop {
+  background-color: #fce7e7;
+}
+
+.font1 {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+p {
+  font-size: large;
+}
+
+.font2 {
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.font3 {
+  font-size: xx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }

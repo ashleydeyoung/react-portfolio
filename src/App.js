@@ -21,8 +21,8 @@ class App extends React.Component {
         { title: "Contact", path: "/contact" },
       ],
       home: {
-        title: "My projects",
-        subTitle: "Creating content of all types",
+        title: "Passion",
+        subTitle: "Creating with a purpose",
         text: "Checkout my projects below",
       },
       about: {
@@ -37,37 +37,20 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-          <nav className="navbar navbar-expand-lg  navbar-transparet bg-transparent p-0">
-            <div className="container p-0 h-100 full-width">
-              <div className="row w-100 m-0 h-100">
-                <div
-                  id="clickable"
-                  className="col-md-4 h-100 text-white text-center text-nowrap bg-dark py-3 px-0 m-0"
-                >
-                  <h3>Ashley DeYoung</h3>
-                </div>
-                <Navbar className="navbar justify-content-right">
-                  <Navbar.Toggle
-                    className="border-0"
-                    aria-controls="navbar-toggle"
-                  />
-                  <Navbar.Collapse id="navbar-toggle">
-                    <Nav className="ml-auto">
-                      <Link className="nav-link" to="/">
-                        Home
-                      </Link>
-                      <Link className="nav-link" to="/about">
-                        About
-                      </Link>
-                      <Link className="nav-link" to="/contact">
-                        Contact
-                      </Link>
-                    </Nav>
-                  </Navbar.Collapse>
-                </Navbar>
-              </div>
-            </div>
-          </nav>
+      
+        <Navbar className="border-bottom bg-dark text-white"  expand="lg">
+            <Navbar.Brand className="bg-dark font3 text-white">Ashley DeYoung</Navbar.Brand>
+
+            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+            <Navbar.Collapse id="navbar-toggle">
+              <Nav className="ml-auto">
+                <Link className="nav-link font2 text-white" to="/">Home</Link>
+                <Link className="nav-link font2 text-white" to="/about">About</Link>
+                <Link className="nav-link font2 text-white" to="/contact">Contact</Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+
 
           <Route
             path="/"

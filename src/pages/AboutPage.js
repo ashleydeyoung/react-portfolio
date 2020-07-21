@@ -13,17 +13,15 @@ function AboutPage(props) {
 
             <Content>
             <img height="200" width="250" className="round img-fluid float-left m-2 mx-4" src={photo} alt="ashleydeyoung" />
-            <p>Hello, my name is Ashley. I'm a full stack web developer with experience in HTML, JavaScript, CSS, Express JS, Node JS, mySQL, MongoDB, and React.</p>
+            <p className="font1">Hello, my name is Ashley. I'm a full stack web developer based in Charlotte, North Carolina with experience in HTML, JavaScript, CSS, Express JS, Node JS, mySQL, MongoDB, and React.</p>
 
-            <p>My dream is to continue to develop useful applications for everyone to enjoy.</p>
+            <p className="font1">As a developer, I am able to use my passion for solving problems to create applications that make a difference in people's lives.</p>
 
-            <p>I have always had a passion for creating content and solving problems.</p>
+            <p className="font1">Currently, I am expanding my knowledge with React as well as gaining more experience with Express JS and Node JS.</p>
 
-            <p>I'm constantly learning new things. currently those things include gaining more experience with React, Express JS, and Node JS</p>
+            <p className="font1">You can checkout all my latest projects here <a href="https://github.com/ashleydeyoung" target="_blank" rel="noopener noreferrer">here</a>, or on the homepage.</p>
 
-            <p>You can checkout all my latest projects here <a href="https://github.com/ashleydeyoung" target="_blank" rel="noopener noreferrer">here</a>, or on the homepage.</p>
-            
-            <p>Feel Free to <a href="/contact" rel="noopener noreferrer">contact me</a>, with any questions! I look forward to hearing from you soon!</p>
+            <p className="font1">Feel free to <a href="/contact" rel="noopener noreferrer">contact me</a> with any questions! I look forward to hearing from you soon!</p>
             </Content>
         </div>
     );
