@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Content from '../components/Content';
+import "../App.css";
 
 import photo from '../assets/images/photo.jpg';
 
@@ -11,7 +12,7 @@ function AboutPage(props) {
             <Hero title={props.title} />
 
             <Content>
-            <img height="200" width="250" className="img-fluid float-left m-2 mx-4" src={photo} alt="ashleydeyoung" />
+            <img height="200" width="250" className="round img-fluid float-left m-2 mx-4" src={photo} alt="ashleydeyoung" />
             <p>Hello, my name is Ashley. I'm a full stack web developer with experience in HTML, JavaScript, CSS, Express JS, Node JS, mySQL, MongoDB, and React.</p>
 
             <p>My dream is to continue to develop useful applications for everyone to enjoy.</p>

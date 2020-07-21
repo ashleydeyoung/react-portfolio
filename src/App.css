@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: url('./assets/images/sky2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.see {
+  background-color: #fce7e7;
+  border-radius: 25px;
+}
+
+.round {
+  border-radius: 25px;
+}

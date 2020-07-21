@@ -6,16 +6,14 @@ import Button from "react-bootstrap/Button";
 import Hero from "../components/Hero";
 import Content from "../components/Content";
 
-
 class ContactPage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.submitForm = this.submitForm.bind(this);
-        this.state = {
-          status: "",
-        };
-      }
-
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: "",
+    };
+  }
 
   submitForm(ev) {
     ev.preventDefault();
@@ -82,27 +80,24 @@ class ContactPage extends React.Component {
               />
             </Form.Group>
 
-            {/* <Button
-              className="d-inline-block"
-              variant="primary"
-              type="submit"
-          
-            >
-              Send
-            </Button> */}
-            {status === "SUCCESS" ? <div class="alert alert-success" role="alert">
-  Success! Thank you!
-</div> :             <Button
-              className="d-inline-block"
-              variant="primary"
-              type="submit"
-          
-            >
-              Send
-            </Button>}
-        {status === "ERROR" && <div class="alert alert-danger" role="alert">
-  Oops, there was an error!
-</div>}
+            {status === "SUCCESS" ? (
+              <div class="alert alert-success" role="alert">
+                Success! Thank you!
+              </div>
+            ) : (
+              <Button
+                className="d-inline-block"
+                variant="primary"
+                type="submit"
+              >
+                Send
+              </Button>
+            )}
+            {status === "ERROR" && (
+              <div class="alert alert-danger" role="alert">
+                Oops, there was an error!
+              </div>
+            )}
           </Form>
         </Content>
       </div>
