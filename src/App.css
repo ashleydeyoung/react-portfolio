@@ -75,3 +75,11 @@ p {
   font-size: x-large;
   font-family: Georgia, 'Times New Roman', Times, serif
 }
+
+.wrap {
+  max-width: 250px;
+}
+
+.tech {
+  font-size: small;
+}

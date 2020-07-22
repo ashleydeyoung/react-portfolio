@@ -7,12 +7,14 @@ function CardInfo(props) {
     const style = useSpring({opacity: 1, from: {opacity: 0}});
 
     return(
-        <animated.div className="g-card-info text-center font1" style={style}>
-            <h5 className="g-card-title">{props.title}</h5>
-            <p className="g-card-sub-title">{props.subTitle}</p>
-            <a href={props.link} target="_blank" rel="noopener noreferrer">Deployed Link</a>
+        <animated.div className="card-info text-center wrap font1" style={style}>
+            <h5 className="card-title font-weight-bolder">{props.title}</h5>
+            <div className="card-text font-italic p-2">{props.subTitle}</div>
+            <div className="card-text tech">Technologies used:</div>
+            <p className="card-text tech">{props.technologies}</p>
+            <a href={props.link}  target="_blank" rel="noopener noreferrer">Deployed Link</a>
             <br/>
-            <a href={props.github} target="_blank" rel="noopener noreferrer">Github</a>
+            <a href={props.github}  target="_blank" rel="noopener noreferrer">Github</a>
         </animated.div>
     );
 

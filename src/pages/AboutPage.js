@@ -9,11 +9,10 @@ function AboutPage(props) {
 
     return(
         <div>
-            <Hero title={props.title} />
-
+            <Hero title={props.title} subTitle={props.subTitle} />
             <Content>
             <img height="200" width="250" className="round img-fluid float-left m-2 mx-4" src={photo} alt="ashleydeyoung" />
-            <p className="font1">Hello, my name is Ashley. I'm a full stack web developer based in Charlotte, North Carolina with experience in HTML, JavaScript, CSS, Express JS, Node JS, mySQL, MongoDB and React.</p>
+            <p className="font1">I am a full stack web developer based in Charlotte, North Carolina with experience in HTML, JavaScript, CSS, Express JS, Node JS, mySQL, MongoDB and React.</p>
 
             <p className="font1">As a developer, I am able to use my passion for solving problems to create applications that make a difference in people's lives.</p>
 
