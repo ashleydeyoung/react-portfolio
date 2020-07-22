@@ -29,7 +29,7 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: 'School-Spot',
-                    subTitle: 'Grading App for teachers/students',
+                    subTitle: 'Grading App for Teachers/Students',
                     imgSrc: school,
                     link: 'https://fast-beach-51043.herokuapp.com/',
                     github: 'https://github.com/ashleydeyoung/School-Spot',
@@ -38,7 +38,7 @@ class Carousel extends React.Component {
                 {
                     id: 2,
                     title: 'Eat-A-Burger',
-                    subTitle: 'A burger game',
+                    subTitle: 'A Burger Game',
                     imgSrc: burger,
                     link: "https://frozen-beach-67804.herokuapp.com/",
                     github: 'https://github.com/ashleydeyoung/burger',
@@ -47,7 +47,7 @@ class Carousel extends React.Component {
                 {
                     id: 3,
                     title: 'Drinkin\' Bad',
-                    subTitle: 'A front End Breaking Bad Game',
+                    subTitle: 'A Front End Breaking Bad Game',
                     imgSrc: drinkinBad,
                     link: 'https://ashleydeyoung.github.io/Drinking-Bad/',
                     github: 'https://github.com/ashleydeyoung/Drinking-Bad',
@@ -65,7 +65,7 @@ class Carousel extends React.Component {
                 {
                     id: 5,
                     title: 'Team Profile Generator',
-                    subTitle: 'A Node CLI HTML generator',
+                    subTitle: 'A Node CLI HTML Generator',
                     imgSrc: team,
                     github: 'https://github.com/ashleydeyoung/Team-Profile-Generator',
                     selected: false
