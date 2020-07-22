@@ -7,7 +7,6 @@ import "./App.css";
 
 import Footer from "./components/Footer";
 import PorfolioPage from "./pages/PortfolioPage";
-// import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
@@ -22,11 +21,6 @@ class App extends React.Component {
         { title: "About", path: "/about" },
         { title: "Contact", path: "/contact" },
       ],
-      home: {
-        title: "Hi! I'm Ashley",
-        text:
-          "I'm a full stack web developer based in Charlotte NC. Feel free to contact me with any qestions or concerns",
-      },
       portfolio: {
         title: "My Playground",
         subTitle: "Where learning and creating collide",
@@ -57,9 +51,6 @@ class App extends React.Component {
                 <Link className="nav-link font2 text-white" to="/">
                   Home
                 </Link>
-                {/* <Link className="nav-link font2 text-white" to="/about">
-                  About
-                </Link> */}
                 <Link className="nav-link font2 text-white" to="/portfolio">
                   Portfolio
                 </Link>
@@ -70,17 +61,6 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
 
-          {/* <Route
-            path="/"
-            exact
-            render={() => (
-              <HomePage
-                title={this.state.home.title}
-                subTitle={this.state.home.subTitle}
-                text={this.state.home.text}
-              />
-            )}
-          /> */}
           <Route
             path="/" exact
             render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} />}
