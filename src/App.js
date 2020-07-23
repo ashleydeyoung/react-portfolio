@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "./App.css";
+import Resume from "./assets/images/Resume.pdf"
 
 import Footer from "./components/Footer";
 import PorfolioPage from "./pages/PortfolioPage";
@@ -32,7 +33,7 @@ class App extends React.Component {
       },
       contact: {
         title: "Contact Me",
-        subTitle: "Looking forward to hearing from you!"
+        subTitle: "Looking forward to hearing from you."
       },
     };
   }
@@ -56,6 +57,9 @@ class App extends React.Component {
                 </Link>
                 <Link className="nav-link font2 text-white" to="/contact">
                   Contact
+                </Link>
+                <Link className="nav-link font2 text-white" to= {Resume} target= "_blank">
+                  Resume
                 </Link>
               </Nav>
             </Navbar.Collapse>
