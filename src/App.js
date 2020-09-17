@@ -4,12 +4,13 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "./App.css";
-import Resume from "./assets/images/Resume.pdf"
-
+import Resume from "./assets/images/Resume.pdf";
 import Footer from "./components/Footer";
 import PorfolioPage from "./pages/PortfolioPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import ParticleComponent from "./components/ParticleComponent";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -37,28 +38,49 @@ class App extends React.Component {
       },
     };
   }
+  
   render() {
     return (
-      <Router>
+
+      <Router >
+        <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%"
+        }}
+      ></div>
+              <ParticleComponent />
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%"
+          }}
+        ></div>
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom bg-dark text-white" expand="lg">
-            <Navbar.Brand className="bg-dark font3 text-white" href="/">
+          <Navbar className="navColor text-white" expand="lg">
+            <Navbar.Brand className="navColor font3 fontPurple" href="/">
               Ashley DeYoung
             </Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link font2 text-white" to="/">
+                <Link className="nav-link font2 fontPurple" to="/">
                   Home
                 </Link>
-                <Link className="nav-link font2 text-white" to="/portfolio">
+                <Link className="nav-link font2 fontPurple" to="/portfolio">
                   Portfolio
                 </Link>
-                <Link className="nav-link font2 text-white" to="/contact">
+                <Link className="nav-link font2 fontPurple" to="/contact">
                   Contact
                 </Link>
-                <Link className="nav-link font2 text-white" to= {Resume} target= "_blank">
+                <Link className="nav-link font2 fontPurple" to= {Resume} target= "_blank">
                   Resume
                 </Link>
               </Nav>
@@ -80,7 +102,9 @@ class App extends React.Component {
 
           <Footer />
         </Container>
+
       </Router>
+      
     );
   }
 }
