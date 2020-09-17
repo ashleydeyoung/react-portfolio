@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="mt-5">
       <Container fluid={true}>
-        <nav className="navbar bottomStyle fixed-bottom navbar-text bg-dark text-center border-top text-white">
+        <nav className="navbar bottomStyle fixed-bottom navbar-text navColor text-center fontPurple">
           <div className="row w-100 full-width">
             <div className="col font2 text-center">
               Copyright © Ashley DeYoung
@@ -17,14 +17,14 @@ function Footer() {
             <div className="col text-center">
               <a
                 href="https://github.com/ashleydeyoung" target="_blank" rel="noopener noreferrer"
-                className="text-right text-white"
+                className="text-right fontPurple"
               >
                 <i className="fab fa-github"></i>
               </a>{" "}
               &nbsp;
               <a
                 href="https://www.linkedin.com/in/ashleydeyoung" target="_blank" rel="noopener noreferrer"
-                className="text-right text-white"
+                className="text-right fontPurple"
               >
                 <i className="fab fa-linkedin"></i>
               </a>
