@@ -5,7 +5,7 @@ import "../App.css";
 
 function Footer() {
   return (
-    <footer className="mt-5">
+    
       <Container fluid={true}>
         <nav className="navbar bottomStyle fixed-bottom navbar-text navColor text-center fontPurple">
           <div className="row w-100 full-width">
@@ -32,7 +32,7 @@ function Footer() {
           </div>
         </nav>
       </Container>
-    </footer>
+    
   );
 }
 
