@@ -38,7 +38,7 @@
 }
 
 body {
-  background: url('./assets/images/sky2.jpg') no-repeat center center fixed;
+  background-color: #1d1145;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -46,16 +46,20 @@ body {
 }
 
 .see {
-  background-color: #fce7e7;
-  /* border-radius: 25px; */
+  background-color: #e76d89;
+  border-radius: 5px;
 }
 
-/* .round {
-  border-radius: 25px;
-} */
+.purpleColor {
+  background-color: #1d1145;
+}
 
-.drop {
-  background-color: #fce7e7;
+.navColor {
+  background-color: #0db4b9
+}
+
+.lightPink {
+  background-color: #f2a1a1;
 }
 
 .font1 {
@@ -76,6 +80,17 @@ p {
   font-family: Georgia, 'Times New Roman', Times, serif
 }
 
+.fontGreen {
+  color: #0db4b9;
+}
+
+.fontPurple {
+  color: #1d1145;
+}
+
+.fontPink {
+  color: #e76d89;
+}
 .wrap {
   max-width: 250px;
 }
