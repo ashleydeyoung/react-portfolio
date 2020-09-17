@@ -47,7 +47,7 @@ class ContactPage extends React.Component {
             method="POST"
           >
             <Form.Group>
-              <Form.Label htmlFor="full-name">Full Name</Form.Label>
+              <Form.Label htmlFor="full-name" className= "fontPurple font1">Full Name:</Form.Label>
               <Form.Control
                 id="full-name"
                 name="name"
@@ -58,7 +58,7 @@ class ContactPage extends React.Component {
             </Form.Group>
 
             <Form.Group>
-              <Form.Label htmlFor="email">Email</Form.Label>
+              <Form.Label htmlFor="email" className= "fontPurple font1">Email:</Form.Label>
               <Form.Control
                 id="email"
                 name="email"
@@ -69,7 +69,7 @@ class ContactPage extends React.Component {
             </Form.Group>
 
             <Form.Group>
-              <Form.Label htmlFor="message">Message</Form.Label>
+              <Form.Label htmlFor="message" className= "fontPurple font1">Message:</Form.Label>
               <Form.Control
                 id="message"
                 name="message"
@@ -86,8 +86,7 @@ class ContactPage extends React.Component {
               </div>
             ) : (
               <Button
-                className="d-inline-block"
-                variant="primary"
+                className="d-inline-block font1  btn-outline-light purpleColor"
                 type="submit"
               >
                 Send
